@@ -4,7 +4,7 @@ const app = require('./app')
 
 const { loadAllPlanets } = require('./models/planets.model')
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 5000
 
 const server = http.createServer(app)
 
@@ -17,4 +17,3 @@ async function startServer() {
 }
 
 startServer()
-  
