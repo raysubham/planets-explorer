@@ -16,6 +16,7 @@ mongoose.connection.once('open', () => {
   console.log(`MongoDB started!`)
 })
 mongoose.connection.on('error', (err) => {
+  console.log(err)
   console.error(err)
 })
 
