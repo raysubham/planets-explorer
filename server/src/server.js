@@ -1,5 +1,6 @@
 const http = require('http')
 const mongoose = require('mongoose')
+require('dotenv').config()
 
 const app = require('./app')
 
@@ -7,16 +8,14 @@ const { loadAllPlanets } = require('./models/planets.model')
 
 const PORT = process.env.PORT || 5000
 
-const MONGO_URL =
-  'mongodb+srv://planets-api:bppQGlNsKdfh5Gi3@planets-database.buupv.mongodb.net/planets?retryWrites=true&w=majority'
+const MONGO_URL = process.env.MONGO_URL
 
 const server = http.createServer(app)
 
 mongoose.connection.once('open', () => {
-  console.log(`MongoDB started!`)
+  console.log(`MongoDB connected remotely 2 Atlas!`)
 })
 mongoose.connection.on('error', (err) => {
-  console.log(err)
   console.error(err)
 })
 
