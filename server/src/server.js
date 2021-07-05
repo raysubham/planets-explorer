@@ -13,7 +13,7 @@ const MONGO_URL = process.env.MONGO_URL
 const server = http.createServer(app)
 
 mongoose.connection.once('open', () => {
-  console.log(`MongoDB connected remotely 2 Atlas!`)
+  console.log(`MongoDB connected remotely => Atlas!`)
 })
 mongoose.connection.on('error', (err) => {
   console.error(err)
