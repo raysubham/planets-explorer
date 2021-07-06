@@ -18,7 +18,7 @@ async function httpAddNewLaunch(req, res) {
     !launch.target ||
     !launch.launchDate
   ) {
-    res.status(400).json({
+    return res.status(400).json({
       error: 'Missing required launch properties',
     })
   }
