@@ -6,12 +6,16 @@ on:
     branches: [main]
 jobs:
   build:
+    env:
+      CI: true
+    strategy:
+      matrix: node-version:[14.x,16.x]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js Version 14
+      - name: Use Node.js Version ${{matrix.node-version}}
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: ${{matrix.node-version}}
       - run: npm install
       - run: npm run build --prefix client
