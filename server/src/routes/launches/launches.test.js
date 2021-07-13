@@ -1,12 +1,14 @@
 const request = require('supertest')
 const app = require('../../app')
 const { mongoConnect, mongoDisconnect } = require('./../../services/mongo')
+const { loadAllPlanets } = require('../../models/planets.model')
 
 //remember that these tests will add invalid data to production db, so the better solution to this is using a separte testing db for running these tests. so just use another mongo URL env.
 
 describe('Testing Launches API', () => {
   beforeAll(async () => {
     await mongoConnect()
+    await loadAllPlanets()
   })
   afterAll(async () => {
     await mongoDisconnect()
