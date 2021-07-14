@@ -1,5 +1,5 @@
 {
-  "name": "nasa-fe",
+  "name": "planets-explorer-frontend",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
