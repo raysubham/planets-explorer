@@ -10,7 +10,7 @@ const app = express()
 
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://planets-explorer.herokuapp.com:3000',
   })
 )
 
