@@ -8,9 +8,11 @@ const launchesRouter = require('./routes/launches/launches.router')
 
 const app = express()
 
+// disable this for production because cors is not needed as the static files are served via express
+
 // app.use(
 //   cors({
-//     origin: 'https://planets-explorer.herokuapp.com:3000',
+//     origin: 'https://localhost:3000',
 //   })
 // )
 
