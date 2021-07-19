@@ -18,6 +18,7 @@ const Footer = () => {
             <a
               style={{ textDecoration: 'none', color: 'inherit  ' }}
               target='_blank'
+              rel='noreferrer'
               href='https://github.com/r-spacex/SpaceX-API'
             >
               SpaceX API
