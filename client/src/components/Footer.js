@@ -7,13 +7,22 @@ const Footer = () => {
       <Centered>
         <Paragraph
           style={{
-            fontSize: 14,
+            fontSize: 15,
             alignItems: 'center',
             display: 'flex',
             justifyContent: 'center',
           }}
         >
-          Made by Subham Ray
+          Made by Subham Ray | Powered by
+          {
+            <a
+              style={{ textDecoration: 'none', color: 'inherit  ' }}
+              target='_blank'
+              href='https://github.com/r-spacex/SpaceX-API'
+            >
+              SpaceX API
+            </a>
+          }
         </Paragraph>
       </Centered>
     </ArwesFooter>
