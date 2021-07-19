@@ -8,11 +8,11 @@ const launchesRouter = require('./routes/launches/launches.router')
 
 const app = express()
 
-app.use(
-  cors({
-    origin: 'https://planets-explorer.herokuapp.com:3000',
-  })
-)
+// app.use(
+//   cors({
+//     origin: 'https://planets-explorer.herokuapp.com:3000',
+//   })
+// )
 
 app.use(morgan('combined'))
 
