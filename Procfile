@@ -1,0 +1,1 @@
+deploy-cluster: npm run build --prefix client && npm start --prefix server
