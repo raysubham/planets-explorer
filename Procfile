@@ -1,1 +1,1 @@
-deploy-cluster: npm run cluster --prefix server
+web: npm run cluster --prefix server
