@@ -1,1 +1,1 @@
-web: npm run build --prefix client && npm start --prefix server
+start: npm start --prefix server
