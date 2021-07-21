@@ -13,6 +13,7 @@ const Footer = () => {
             justifyContent: 'center',
           }}
         >
+          Made by
           <a
             target='_blank'
             rel='noreferrer'
@@ -23,8 +24,9 @@ const Footer = () => {
               cursor: 'pointer',
             }}
           >
-            Made by Subham Ray | Powered by
-          </a>
+            <p> Subham Ray</p>
+          </a>{' '}
+          <p> | Powered by</p>
           {
             <a
               style={{
