@@ -13,10 +13,25 @@ const Footer = () => {
             justifyContent: 'center',
           }}
         >
-          Made by Subham Ray | Powered by
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='https://subhamray.com'
+            style={{
+              textDecoration: 'none',
+              color: 'inherit  ',
+              cursor: 'pointer',
+            }}
+          >
+            Made by Subham Ray | Powered by
+          </a>
           {
             <a
-              style={{ textDecoration: 'none', color: 'inherit  ' }}
+              style={{
+                textDecoration: 'none',
+                color: 'inherit  ',
+                cursor: 'pointer',
+              }}
               target='_blank'
               rel='noreferrer'
               href='https://github.com/r-spacex/SpaceX-API'
